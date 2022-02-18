@@ -1,0 +1,99 @@
+.slider {
+    width: 600px;
+    min-height: 100vh; //*
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        left: 173px;
+        width: 600px;
+        height: 768px;
+    }
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item-img {
+        display: block;
+    }
+    &__item-info {
+        position: absolute;
+        left: 9%;
+        bottom: 12.5%;
+    }
+    &__item-title {
+        font-size: 72px;
+        line-height: 1;
+        font-weight: 400;
+        color: $COLOR_WHITE;
+
+    }
+    &__item-description {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.8)
+    }
+    &__logo-wrapper {
+        position: absolute;
+        top: 32px;
+        left: 52px;
+        z-index: 1000;
+        width: 95px;
+        height: 53px;
+    }
+    &__logo-img {
+        width: 100%;
+    }
+    &__change {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+        position: absolute;
+        bottom: 4.3%;
+        left: 8.7%;
+        z-index: 1000;
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        cursor: pointer;
+        &:hover {
+            outline: 1px solid $COLOR_WHITE;
+        }
+        &:active {
+            background-color: $COLOR_WHITE;
+        }
+        &:active .icon-leftArrow::before, &:active .icon-rightArrow::before  {
+            color: $COLOR_GRAY;
+        }
+    }
+    &__counter {
+        position: absolute;
+        bottom: 32px;
+        left: 212px;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70px;
+    }
+    &__order, &__total {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &__divider {
+        width: 16px;
+        height: 1px;
+        background-color: $COLOR_WHITE;
+    }
+    &__order {
+        color: $COLOR_WHITE;
+    }
+}
