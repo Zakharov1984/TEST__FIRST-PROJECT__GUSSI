@@ -24,7 +24,7 @@ leftArrowElement.addEventListener('click', event => {
         nexElement.classList.add('slider__item_active');
         setTimeout(() => {
             document.querySelector('.slider__order span').innerHTML =  nexElement.id;
-        }, 800);
+        }, 900);
         nexElement.nextSibling.classList.remove('slider__item_active');
     } else {
         event.preventDefault();
@@ -37,7 +37,7 @@ rightArrowElement.addEventListener('click', event => {
         nexElement.classList.add('slider__item_active');
         setTimeout(() => {
             document.querySelector('.slider__order span').innerHTML =  nexElement.id;
-        }, 800);
+        }, 900);
         nexElement.previousSibling.classList.remove('slider__item_active');
     } else {
         event.preventDefault();

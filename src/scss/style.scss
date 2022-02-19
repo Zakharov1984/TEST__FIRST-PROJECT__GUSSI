@@ -16,12 +16,21 @@ body {
     text-decoration: none;
 }
 
+h1,h2,p {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1360px;
     height: 100vh;
     margin: 0 auto;
 }
 @import 'blocks/_generalWrapper';
-@import 'blocks/slider';
-@import 'blocks/content';
+@import 'blocks/_slider';
+@import 'blocks/_content';
+@import 'blocks/_title';
+@import 'blocks/_btn';
+@import 'blocks/_description';
+@import 'blocks/_collection';
 @import '_media';
