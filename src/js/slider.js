@@ -22,7 +22,9 @@ leftArrowElement.addEventListener('click', event => {
     if (document.querySelector('.slider__item_active').id !== 1) {
         let nexElement = document.querySelector(`[id="${document.querySelector('.slider__item_active').id - 1}"]`);
         nexElement.classList.add('slider__item_active');
-        document.querySelector('.slider__order span').innerHTML =  nexElement.id;
+        setTimeout(() => {
+            document.querySelector('.slider__order span').innerHTML =  nexElement.id;
+        }, 800);
         nexElement.nextSibling.classList.remove('slider__item_active');
     } else {
         event.preventDefault();
@@ -33,7 +35,9 @@ rightArrowElement.addEventListener('click', event => {
     if (document.querySelector('.slider__item_active').id !== 3) {
         let nexElement = document.querySelector(`[id="${Number(document.querySelector('.slider__item_active').id) + 1}"]`);
         nexElement.classList.add('slider__item_active');
-        document.querySelector('.slider__order span').innerHTML =  nexElement.id;
+        setTimeout(() => {
+            document.querySelector('.slider__order span').innerHTML =  nexElement.id;
+        }, 800);
         nexElement.previousSibling.classList.remove('slider__item_active');
     } else {
         event.preventDefault();
