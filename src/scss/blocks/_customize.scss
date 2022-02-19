@@ -39,5 +39,46 @@
             background-color: $COLOR_LIGHTBLUE;
         }
     }
-
+    &__size-list {
+        display: flex;
+        margin-top: 8px;
+    }
+    &__size-item {
+        width: 32px;
+        height: 32px;
+        border: 1px solid $COLOR_WHITE;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:not(:first-child) {
+            margin-left: 3px;
+        }
+        &:hover {
+            border: 1px solid $COLOR_GRAY;
+        }
+        &_no-product:hover {
+            border: 1px solid $COLOR_WHITE;
+        }
+        &_active {
+            border: 1px solid $COLOR_VIO;
+            &:hover {
+                border: 1px solid $COLOR_VIO;
+            }
+        }
+    }
+    &__size-subitem {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $COLOR_GRAY;
+        &_no-product {
+            color: $COLOR_LIGHTGRAY;
+        }
+        &_active {
+            font-size: 20px;
+            color: $COLOR_VIO;
+        }
+    }
 }   
