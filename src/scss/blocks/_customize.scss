@@ -1,7 +1,8 @@
 .customize {
     padding: 16px 0;
     display: grid;
-    grid-template: minmax(64px, auto) minmax(76px, auto) / 161px 195px 92px;
+    border-bottom: 1px solid $COLOR_LIGHTGRAY;
+    grid-template: minmax(64px, auto) minmax(96px, auto) / 161px 195px 92px;
     &__color-wrapper {
         display: flex;
         margin-top: 8px;
@@ -80,5 +81,87 @@
             font-size: 20px;
             color: $COLOR_VIO;
         }
+    }
+    &__size-guide {
+        align-self: end;
+        display: inline-block;
+        width: 92px;
+        height: 28px;
+        margin-bottom: 3px;
+        border: 1px solid $COLOR_SANDY;
+        border-radius: 24px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        color: $COLOR_SANDY;
+        &:hover {
+            color: $COLOR_SANDY;
+        }
+    }
+    &__quantity {
+        align-self: end;
+    }
+    &__quantity-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    &__quantity-minus, &__quantity-plus {
+        width: 28px;
+        height: 28px;
+        border-radius: 100%;
+        position: relative;
+        &:hover {
+            border: 1px solid $COLOR_LIGHTGRAY;
+        }
+        &::before {
+            content: '';
+            width: 10px;
+            height: 1.5px;
+            background: #192B3F;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__quantity-plus::after {
+        content: '';
+        width: 1.5px;
+        height: 10px;
+        background: #192B3F;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__quantity-number {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 500;
+        color: $COLOR_GRAY;
+        margin: 0 13px;
+    }
+    &__cost {
+        align-self: end
+    }
+    &__cost-wrapper {
+        display: flex;
+        height: 40px;
+        align-items: flex-end;
+    }
+    &__cost-dollar, &__cost-symbol-dollar {
+        font-size: 40px;
+        line-height: 32px;
+        font-weight: 500;
+        color: $COLOR_SANDY;
+    }
+    &__cost-cent {
+        font-size: 28px;
+        line-height: 26px;
+        font-weight: 500;
+        color: $COLOR_GRAY;
     }
 }   
