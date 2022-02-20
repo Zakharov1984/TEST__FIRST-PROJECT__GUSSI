@@ -1,0 +1,16 @@
+.details {
+    padding: 24px 0 72px;
+    &__description {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(25, 43, 63, 0.8);
+    }
+    &__info {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        color: $COLOR_GRAY;
+    }
+}
