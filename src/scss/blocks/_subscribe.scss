@@ -119,4 +119,10 @@
     &__btn {
         margin-top: 28px;
     }
+    &__form-error {
+        max-width: 456px;
+        margin: 16px 0;
+        outline: 2px solid #192B3F;
+        padding: 8px 16px;
+    }
 }
