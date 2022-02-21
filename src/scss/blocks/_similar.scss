@@ -1,0 +1,36 @@
+.similar {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        padding-bottom: 64px;
+    }
+    &__item {
+        display: block;
+        position: relative;
+        width: 296px;
+        height: 160px;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    &__item-wrapper {
+        position: absolute;
+        bottom: 12px;
+        left: 16px;
+    }
+    &__item-title {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 400;
+        color: $COLOR_WHITE;
+    }
+    &__item-subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
