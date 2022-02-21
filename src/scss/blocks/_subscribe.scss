@@ -1,0 +1,122 @@
+.subscribe {
+    &__title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 500;
+        color: $COLOR_VIO;
+    }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+        color: rgba(138, 148, 166, 0.8);
+    }
+    &__form {
+        margin-top: 24px;
+    }
+    &__form-input {
+        display: block;
+        width: 456px;
+        padding: 8px 16px;
+        border: none;
+        background-color: rgba(225, 230, 237, 0.2);
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 500;
+            color: $COLOR_GRAY;
+        }
+        &:focus {
+            outline: 2px solid $COLOR_GRAY;
+        }
+    }
+    &__form-input[type="text"] {
+        margin-bottom: 16px;
+    }
+    &__form-gender-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    &__form-gender-title {
+        display: inline-block;
+        margin-right: 24px;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+        color: rgba(138, 148, 166, 0.8);
+    }
+    &__form-radio-wrapper {
+        width: 159px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__form-label {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $COLOR_VIO;
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            outline: 1px solid $COLOR_LIGHTGRAY;            
+        }
+    }
+    &__form-radio:checked+&__form-label::before {
+        background: url('../img/desktop/subscribe/circle.svg') center center / 60% no-repeat;
+    }
+    &__form-label[for="male"] {
+        margin-right: 10px;
+    }
+    &__form-radio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__form-checkbox-wrapper {
+        margin-top: 40px;
+    }
+    &__form-checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__form-label-checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $COLOR_VIO;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 1px solid $COLOR_LIGHTGRAY;
+            margin-right: 8px;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &:hover {
+            &::before {
+                outline: 1px solid $COLOR_VIO;
+                background: url('../icons/checkbox/vector_gray.svg') center center / 70% no-repeat;
+            }
+        }    
+    }
+    &__form-checkbox:checked+&__form-label-checkbox::before {
+        border: none;
+        background: url('../icons/checkbox/vector_white.svg') center center / 60% no-repeat $COLOR_VIO;
+    }
+    &__btn {
+        margin-top: 28px;
+    }
+}
