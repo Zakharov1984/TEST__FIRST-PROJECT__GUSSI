@@ -1,7 +1,10 @@
 .content {
     width: 760px;
+    position: relative; // *
+    background: $COLOR_WHITE; // *
     &__wrapper {
         max-width: 616px;
-        margin: 0 auto;
+        margin-right: 52px; // 0 auto
+        margin-left: auto; 
     }
 }

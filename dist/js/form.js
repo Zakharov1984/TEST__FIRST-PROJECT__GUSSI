@@ -1,5 +1,6 @@
 let inputNameElement = document.querySelector('.subscribe__form-input[name="name"]');
 let inputEmailElement = document.querySelector('.subscribe__form-input[name="email"]');
+let formElement = document.querySelector('subscribe__form');
 let regExpName = /^[a-z]+$/i;
 let regExpEmail = /^[\w._-]+@\w+\.[a-z]{2,4}$/i;
 
@@ -39,3 +40,7 @@ function addElementError(object) {
         object.insertAdjacentHTML('afterend', `<div class="subscribe__form-error">Please enter a valid postal address</div>`);
     }
 }
+
+formElement.addEventListener('submit', event => {
+    event.preventDefault();
+})

@@ -1,19 +1,18 @@
 .slider {
     width: 600px;
-    min-height: 100vh; //*
     &__wrapper {
         position: fixed;
         top: 0;
-        left: 88px;
-        width: 600px;
+        width: 600px; // * 600px calc(100% - 863px)
         height: 768px;
     }
     &__item {
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         z-index: 0;
         transition: filter 1.5s linear;
+        width: 100%; //* -
         filter: opacity(0%);
     }
     &__item_active {
@@ -22,7 +21,9 @@
         
     }
     &__item-img {
-        display: block;
+        width: 100%; // *600px
+        height: 768px;
+        object-fit: cover; // * -
     }
     &__item-info {
         position: absolute;
