@@ -13,21 +13,36 @@
             <aside class="slider">
                 <div class="slider__wrapper">
                     <div class="slider__item slider__item_active" id="1">
-                        <img src="img/desktop/slider/Lady1.jpg" alt="Lady" class="slider__item-img">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/desktop/slider/Lady1.jpg">
+                            <source media="(max-width: 991px)" srcset="img/tablet/slider/Lady1.jpg">
+                            <source media="(max-width: 1360px)" srcset="img/desktop/slider/Lady1.jpg">
+                            <img src="img/desktop/slider/Lady1.jpg" alt="Lady" class="slider__item-img">
+                        </picture>
                         <div class="slider__item-info">
                             <div class="slider__item-title">Light coat</div>
                             <div class="slider__item-description">More cotton, more freedom</div>
                         </div>
                     </div>
                     <div class="slider__item" id="2">
-                        <img src="img/desktop/slider/Lady2.jpg" alt="Lady" class="slider__item-img">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/desktop/slider/Lady2.jpg">
+                            <source media="(max-width: 991px)" srcset="img/tablet/slider/Lady1.jpg">
+                            <source media="(max-width: 1360px)" srcset="img/desktop/slider/Lady2.jpg">
+                            <img src="img/desktop/slider/Lady2.jpg" alt="Lady" class="slider__item-img">
+                        </picture>
                         <div class="slider__item-info">
                             <div class="slider__item-title">Sandy longsleeve</div>
                             <div class="slider__item-description">More cotton, more freedom</div>
                         </div>
                     </div>
                     <div class="slider__item" id="3">
-                        <img src="img/desktop/slider/Lady3.jpg" alt="Lady" class="slider__item-img">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/desktop/slider/Lady3.jpg">
+                            <source media="(max-width: 991px)" srcset="img/tablet/slider/Lady1.jpg">
+                            <source media="(max-width: 1360px)" srcset="img/desktop/slider/Lady3.jpg">
+                            <img src="img/desktop/slider/Lady3.jpg" alt="Lady" class="slider__item-img">
+                        </picture>
                         <div class="slider__item-info">
                             <div class="slider__item-title">Lime jacket</div>
                             <div class="slider__item-description">More cotton, more freedom</div>
@@ -143,8 +158,9 @@
                         <div class="similar__wrapper">
                             <a href="#" class="similar__item similar__item_mr-15 similar__item_mb-28">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="img/desktop/SimilarCollections/Lady1.jpg">
+                                    <source media="(max-width: 320px)" srcset="img/mobile/SimilarCollections/Lady1.jpg">
                                     <source media="(max-width: 991px)" srcset="img/tablet/SimilarCollections/Lady1.jpg">
+                                    <source media="(max-width: 1360px)" srcset="img/desktop/SimilarCollections/Lady1.jpg">
                                     <img src="img/desktop/SimilarCollections/Lady1.jpg" alt="Lady" class="similar__img">
                                 </picture>
                                 <div class="similar__item-wrapper">
@@ -154,8 +170,9 @@
                             </a>
                             <a href="#" class="similar__item">
                                 <picture>
-                                    <source media="(min-width: 992px)" srcset="img/desktop/SimilarCollections/Lady2.jpg">
+                                    <source media="(max-width: 320px)" srcset="img/mobile/SimilarCollections/Lady2.jpg">
                                     <source media="(max-width: 991px)" srcset="img/tablet/SimilarCollections/Lady2.jpg">
+                                    <source media="(max-width: 1360px)" srcset="img/desktop/SimilarCollections/Lady2.jpg">
                                     <img src="img/desktop/SimilarCollections/Lady2.jpg" alt="Lady" class="similar__img">
                                 </picture>
                                 <div class="similar__item-wrapper">
@@ -181,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="subscribe__form-checkbox-wrapper">
-                                <input type="checkbox" name="details" class="subscribe__form-checkbox" id="details" required>
+                                <input type="checkbox" name="details" class="subscribe__form-checkbox" id="details" required checked>
                                 <label for="details" class="subscribe__form-label-checkbox">Look out for its standout party dresses, feminine details</label>
                             </div>
                             <button class="btn subscribe__btn" data-btn="subscribe">Subscribe Gussi</button>
@@ -198,3 +215,9 @@
     <script src='js/testSlider.js'></script>
 </body>
 </html>
+
+<!-- 
+                            <source media="(max-width: 1360px)" srcset="img/desktop/slider/Lady1.jpg">
+                            <source media="(max-width: 991px)" srcset="img/tablet/slider/Lady1.jpg">
+                            <source media="(max-width: 767px)" srcset="img/desktop/slider/Lady1.jpg">
+ -->
